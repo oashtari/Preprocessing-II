@@ -1,3 +1,18 @@
+.test-border {
+  border: 1px solid red;
+}
+.btn {
+  background-color: #277e7e;
+  /* Teal...? */
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +183,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+}
+.nav .a {
+  margin: 20px;
+  font-size: 1.25rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -187,6 +214,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 1px solid red;
 }
 .home .content-section .text-content {
   width: 48%;
