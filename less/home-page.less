@@ -13,11 +13,7 @@
 
   .content-section {
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .test-border();
-
+    .display(wrap,space-between,center);
     
     .text-content {
       width: 48%;
@@ -29,7 +25,7 @@
       padding-left: 1%;
 
       img {
-        border-radius: 10px;
+        border-radius: @border-radius-10;
       }
     }
   }
@@ -54,15 +50,14 @@
     margin: 0 auto 30px;
 
     img {
-      border-radius: 10px;
+      border-radius: @border-radius-10;
     }
   }
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .display(wrap,space-between,center);
 
     .destination {
       width: 30%;
