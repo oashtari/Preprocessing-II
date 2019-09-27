@@ -13,6 +13,12 @@
   font-size: 16px;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .btn {
+    width: 90%;
+    padding: 15px 60px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -195,6 +201,12 @@ img {
   margin: 20px;
   font-size: 1.25rem;
 }
+@media (max-width: 500px) {
+  .nav {
+    width: 500px;
+    flex-direction: column;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -216,13 +228,31 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    width: 500px;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 25px;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -231,17 +261,42 @@ img {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    width: 100%;
+    padding-right: 25px;
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -257,4 +312,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+    margin: 5px 40px;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    width: 500px;
+    padding: 20px;
+  }
 }
