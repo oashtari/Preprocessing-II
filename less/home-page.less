@@ -24,11 +24,13 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
+      border: 1px solid blue;
       @media @tablet {width: 100%; padding: 0;};
       @media @mobile {width: 100%; padding: 0;};
 
       img {
         border-radius: @border-radius-10;
+        @media @mobile {width: 90%;};
       }
     }
   }
@@ -49,8 +51,12 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @tablet {width: 100%; padding: 0;};
       @media @mobile {width: 100%; padding: 0;};
-      @media @mobile {width: 100%; padding: 0;};
+    }
+    img {
+      border-radius: @border-radius-10;
+      @media @mobile {width: 90%;};
     }
   }
 
